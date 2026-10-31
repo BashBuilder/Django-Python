@@ -1,0 +1,17 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <div class="centered-content">This is the home page</div>
+    <form action="{% url 'contact' %}" method="get">
+      <button type="submit" class="btn">Click to Enter Form</button>
+    </form>
+  </body>
+</html>
